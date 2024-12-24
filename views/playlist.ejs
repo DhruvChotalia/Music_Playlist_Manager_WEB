@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist</title>
+  <style>
+    img{
+    width: 150px;
+    height: 130px;
+   }
+   .artist-container {
+        display: flex;
+        gap: 20px;
+        align-items: center; 
+        border: 1px solid rgb(226, 180, 180);
+        padding: 10px;
+        font-size: 20px;
+       
+    }
+    .artist-container img {
+        margin-right: 20px; 
+    }
+    li{
+        list-style-type: none;
+    }
+    ul{
+        padding: 0px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Playlist</h1>
+  <ul>
+    <!-- Checking if the playlist is empty -->
+    <% if (playlist.length === 0) { %>
+      <!-- Message displayed when the playlist is empty -->
+        <p>You have no songs on your playlist</p>
+        <% } else { %>
+          <!-- Looping through each song in the playlist -->
+    <% for (const song of playlist) { %>
+      <li>
+        <div class="artist-container">
+        <img src="<%= song.artistImage %>" alt="<%= song.title %>">
+        <div>
+        <p>Song : <%= song.title %></p>
+        <p>Artist : <%= song.artist %></p>
+    </div>
+    </div>
+      </li>
+    <% } %>
+    <% } %>
+  </ul>
+  <!-- Link to navigate back to the home page -->
+  <a href="/">Home</a>
+</body>
+</html>

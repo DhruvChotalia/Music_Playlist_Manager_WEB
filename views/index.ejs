@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Playlist</title>
+  <style>
+   img{
+    width: 150px;
+    height: 130px;
+   }
+   .artist-container {
+        display: flex;
+        gap: 20px;
+        border: 1px solid rgb(204, 204, 204);
+        padding: 10px;
+        
+    }
+    .artist-container img {
+        margin-right: 20px;   
+    }
+    li{
+        list-style-type: none;
+    }
+    
+    a{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    ul{
+        padding: 0px;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <h1>Songs</h1>
+  <a href="/playlist">Your Playlist</a>
+  <ul>
+    <% for (let i = 0; i < songs.length; i++) { %>
+      <% let song = songs[i] %>
+      <li>
+        <!-- List item for each song -->
+        <div class="artist-container">
+        <img src="<%= song.artistImage %>" alt="<%= song.artist %>">
+        <div>
+          <p>Song : <%= song.title %></p>
+          <p>Artist : <%= song.artist %></p>
+           <!-- Link to add song to playlist -->
+          <a href="/add/<%= i %>"">Add to Playlist | </a>
+          <!-- Link to find more songs by the same artist -->
+          <a href="/find/<%= song.artist %>">More Songs By This Artist</a>
+        </div>
+    </div>
+      </li>
+    <% } %>
+  </ul>
+  
+</body>
+</html>

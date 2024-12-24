@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .song {
+            border: 1px solid rgb(204, 204, 204);
+            padding: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .song img {
+            width: 120px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Heading displaying search results for a specific artist -->
+    <h1>Search Results for <%= artistName %></h1>
+    <!-- Checking if there are any songs found for the artist -->
+    <% if (newArtistSongs.length > 0) { %>
+        <!-- Looping through each song found for the artist -->
+        <% for (let song of newArtistSongs) { %>
+             <!-- Div for displaying each individual song -->
+            <div class="song">
+                <img src="<%= song.artistImage %>" alt="Artist Image">
+                <div>
+                    <p>Song : <%= song.title %></p>
+                    
+                </div>
+            </div>
+        <% } %>
+    <% } else { %>
+         <!-- Message displayed when no songs are found for the artist -->
+        <p>No songs found for <%= artistName %></p>
+    <% } %>
+    <!-- Link to navigate back to the home page -->
+    <a href="/">Back to Home</a>
+</body>
+</html>
