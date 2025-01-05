@@ -89,7 +89,7 @@ Shows all songs by a specific artist or a message if no songs are found.
 
 # Acknowledgments
 
-Node.js for the runtime environment.
-Express.js for simplifying server-side logic.
-EJS for dynamic content rendering.
-Placeholder Images used for artist visuals.
+Node.js for the runtime environment.<br>
+Express.js for simplifying server-side logic.<br>
+EJS for dynamic content rendering.<br>
+Placeholder Images used for artist visuals.<br>
