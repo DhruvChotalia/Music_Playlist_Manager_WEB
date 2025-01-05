@@ -29,6 +29,7 @@ Frontend
 EJS: Templating engine for dynamic content rendering.
 HTML & CSS: Structure and styling of the web pages.
 
+```
 # Project Structure:
 Music-Playlist-Manager/
 ├── views/
@@ -37,6 +38,7 @@ Music-Playlist-Manager/
 │   └── playlist.ejs   # Playlist page
 ├── server.js            # Main server file
 └── .gitignore           # Git ignore file to exclude node_modules
+```
 
 # Endpoints Overview
 
@@ -72,6 +74,22 @@ node server.js
 Open your browser and navigate to:
 http://localhost:3000
 
-Screenshots:
+# Screenshots:
+Home Page:
+Displays a list of songs with options to add to the playlist or search for more songs by the same artist.
 ![Home Page](Home.jpeg)
 
+Playlist Page
+Displays all songs added to the playlist or a message if the playlist is empty.
+![Playlist Page](play.jpeg)
+
+Search Results Page
+Shows all songs by a specific artist or a message if no songs are found.
+![Search Page](search.jpeg)
+
+# Acknowledgments
+
+Node.js for the runtime environment.
+Express.js for simplifying server-side logic.
+EJS for dynamic content rendering.
+Placeholder Images used for artist visuals.
