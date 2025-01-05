@@ -72,4 +72,6 @@ node server.js
 Open your browser and navigate to:
 http://localhost:3000
 
+Screenshots:
+![Home Page](Home.jpeg)
 
