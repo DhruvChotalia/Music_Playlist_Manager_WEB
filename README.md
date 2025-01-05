@@ -42,19 +42,19 @@ Music-Playlist-Manager/
 
 # Endpoints Overview
 
-/
+/<br>
 Displays all songs available in the application.
 Allows users to add songs to the playlist or search for more songs by a specific artist.
 
-/find/:NameofArtist
+/find/:NameofArtist<br>
 Displays all songs by the specified artist.
 Shows a message if no songs are found for the artist.
 
-/playlist
+/playlist<br>
 Displays all songs added to the user's playlist.
 Shows a message if the playlist is empty.
 
-/add/:position
+/add/:position<br>
 Adds a song to the playlist based on its position in the main song list.
 
 # Steps to run the project:
