@@ -59,19 +59,19 @@ Adds a song to the playlist based on its position in the main song list.
 
 # Steps to run the project:
 
-Clone the repository:
-git clone https://github.com/DhruvChotalia/Music_Playlist_Manager_WEB.git
+Clone the repository:<br>
+``` git clone https://github.com/DhruvChotalia/Music_Playlist_Manager_WEB.git ```
 
-Navigate to the project directory:
-cd music-playlist-manager
+Navigate to the project directory:<br>
+``` cd music-playlist-manager ```
 
-Install dependencies:
-npm install
+Install dependencies:<br>
+``` npm install ```
 
-Start the server:
-node server.js
+Start the server:<br>
+``` node server.js ```
 
-Open your browser and navigate to:
+Open your browser and navigate to:<br>
 http://localhost:3000
 
 # Screenshots:
